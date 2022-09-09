@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB SITE</title>
+    <style>
+        .parent{
+            width:100%;
+        }
+        .header{
+            text-align: center;
+            background-color: burlywood;
+            border:2px solid brown;
+            color:white;
+            padding: 10px;
+          
+        }
+        .user{
+            text-align: right;
+            background-color: pink;
+            border:2px solid brown ;
+            padding: 8px;
+         }
+
+        .mybutton1{
+           width:200px;
+           height:50px;
+           font-size:20px; 
+           background-color:plum;
+           margin-right: 30px;
+
+        }
+        .mybutton2{
+           width:200px;
+           height:50px;
+           font-size:20px; 
+           background-color:plum;
+           margin-right: 10px;
+
+        }
+        .left{
+            width: 300px;
+            height:500px;
+            background-color: cornflowerblue;
+            border:2px solid rgb(96, 6, 89);
+            float:left;
+        }
+        .vertical{
+            list-style-type: none;
+            margin:0;
+            margin-top: 30px;
+            padding:10px;
+            width:200px;
+            position:sticky;
+            overflow:auto;
+            height:1000%;
+        }
+        li a.verticalnav{
+            display:block;
+            color:darkblue;
+            text-align: left;
+            padding: 5px 5px;
+            text-decoration: none;
+            font-size: larger;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="header">
+            <h1>ONLINE TRAINING</h1>
+        </div>
+        <div class="user">
+            <button type="button" class="mybutton1" onclick="alert('register with your details')">SIGN UP</button> 
+            <button type="button" class="mybutton2" onclick="alert('sign in with your details')">SIGN IN</button>
+ 
+        </div><br>
+            <!--Vertical Navigation-->
+            <div class="left">
+                <ul class="vertical">
+                    <li><a class="verticalnav">.NET</a></li>
+                    <li><a class="verticalnav">FULL STACK JAVA DEVELOPER</a></li>
+                    <li><a class="verticalnav">DEVOPS</a></li>
+                    <li><a class="verticalnav">SALES FORCE</a></li>
+                    <li><a class="verticalnav">AUTOMATION</a></li>
+                    <li><a class="verticalnav">TESTING</a></li>
+                    <li><a class="verticalnav">DATA SCIENCE</a></li>
+                    <li><a class="verticalnav">UI FULL STACK</a></li>
+                    <li><a class="verticalnav">UNIX</a></li>
+                    <li><a class="verticalnav">AZURE</a></li>
+                    <li><a class="verticalnav">AWS</a></li>
+                </ul>
+            </div>
+            
+    </div>    
+</body>
+</html>
