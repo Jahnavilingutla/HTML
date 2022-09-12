@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+let a = prompt('Enter the first variable: ');
+let b = prompt('Enter the second variable: ');
+let temp;
+temp = a;
+a = b;
+b = temp;
+document.write(`The value of a after swapping: ${a}`); 
+document.write("<br>");
+document.write(`The value of b after swapping: ${b}`);
+document.write("<br>");
+</script>
+</body>
+</html>
+
+
+
+<script>
+let c= parseInt(prompt('Enter the first variable: '));
+let d =parseInt(prompt('Enter the second variable: '));
+c = c+d;
+d = c-d;
+c = c-d;
+document.write(`The value of c after swapping: ${c}`);
+document.write("<br>");
+document.write(`The value of d after swapping: ${d}`);
+document.write("<br>");
+</script>
+
+
+<script>
+let e= prompt('Enter the first variable: ');
+let f= prompt('Enter the second variable: ');
+[e, f] = [f, e];
+document.write(`The value of e after swapping: ${e}`);
+document.write("<br>");
+document.write(`The value of f after swapping: ${f}`);
+document.write("<br>");
+</script>

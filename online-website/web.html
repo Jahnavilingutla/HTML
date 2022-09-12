@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEBSITE</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
         .parent{
             width:100%;
         }
         .header{
             text-align: center;
-            background-color: burlywood;
+            background-color: honeydew;
             border:2px solid brown;
-            color:white;
+            color:black;
             padding: 10px;
           
         }
@@ -28,7 +31,7 @@
            width:200px;
            height:50px;
            font-size:20px; 
-           background-color:plum;
+           background-color:whitesmoke;
            margin-right: 30px;
 
         }
@@ -36,21 +39,42 @@
            width:200px;
            height:50px;
            font-size:20px; 
-           background-color:plum;
+           background-color:whitesmoke;
            margin-right: 10px;
 
         }
         .left{
-            width: 300px;
-            height:500px;
-            background-color: cornflowerblue;
-            border:2px solid rgb(96, 6, 89);
+            width: 20%;
+            height:600px;
+            background-color: lightslategrey;
+            border:2px solid brown;
             float:left;
+        }
+        .center{
+            width: 50%;
+            height:600px;
+            background-color:powderblue;
+            border:2px solid brown;
+            float:left;
+        }
+        .right{
+            width: 30%;
+            height:600px;
+            background-color: papayawhip;
+            border:2px solid brown;
+            float:left;
+        }
+        .footer{
+            text-align: center;
+            background-color: lightsteelblue;
+            border:2px solid brown;
+            color:black;
+            padding: 20px;
         }
         .vertical{
             list-style-type: none;
             margin:0;
-            margin-top: 30px;
+            margin-top: 20px;
             padding:10px;
             width:200px;
             position:sticky;
@@ -68,33 +92,24 @@
         li a.verticalnav:hover{
             background-color: aquamarine;
         }
-        .center{
-            width: 60%;
-            height:500px;
-            background-color: rgb(229, 181, 243);
-            border:2px solid darkblue;
-            float:left;
+        
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 70%;
         }
-        .footer{
-            text-align: center;
-            background-color: burlywood;
-            border:2px solid brown;
-            color:rgb(3, 3, 3);
-            padding: 20px;
+        
+        td, th {
+          border: 2px solid black;
+          text-align: left;                                         
+          padding: 10px;
         }
-        .transition{
-            width:100px;
-            height:100px;
-            transition: width 2s,height 2s, transform 1s;
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
         }
-        .transition:hover{
-            width:300px;
-            height:200px;
-            transform:rotate(360deg);
-        }
-        .ul_media{
-            display:none;
-        }
+        
+        
 
     </style>
 </head>
@@ -104,7 +119,7 @@
             <h1>ONLINE TRAINING</h1>
         </div>
         <div class="user">
-            <a href="file:///C:/Users/Admin/OneDrive/Desktop/HTML/online-website/sign-in-form.html">
+            <a href="file:///C:/Users/Admin/OneDrive/Desktop/HTML/online-website/signup-form.html">
                <button type="button" class="mybutton1">SIGN UP</button> </a>
              
             <a href="file:///C:/Users/Admin/OneDrive/Desktop/HTML/online-website/signin-form.html">
@@ -112,35 +127,102 @@
  
         </div><br>
             <!--Vertical Navigation-->
+        <div>
             <div class="left">
+                <P style="color: black;"><b>FREE MATERIAL AVAILABLE</b></P>
                 <ul class="vertical">
-                    <li><a class="verticalnav">.NET</a></li>
-                    <li><a class="verticalnav">FULL STACK JAVA DEVELOPER</a></li>
-                    <li><a class="verticalnav">DEVOPS</a></li>
-                    <li><a class="verticalnav">SALES FORCE</a></li>
-                    <li><a class="verticalnav">AUTOMATION</a></li>
-                    <li><a class="verticalnav">TESTING</a></li>
-                    <li><a class="verticalnav">DATA SCIENCE</a></li>
-                    <li><a class="verticalnav">UI FULL STACK</a></li>
-                    <li><a class="verticalnav">UNIX</a></li>
-                    <li><a class="verticalnav">AZURE</a></li>
-                    <li><a class="verticalnav">AWS</a></li>
+                    <li><a href="https://www.javatpoint.com/net-framework" class="verticalnav">.NET</a></li>
+                    <li><a href="https://www.javatpoint.com/java-tutorial"class="verticalnav">FULL STACK JAVA</a></li>
+                    <li><a href="https://www.javatpoint.com/devops-tools"class="verticalnav">DEVOPS</a></li>
+                    <li><a href="https://www.javatpoint.com/salesforce" class="verticalnav">SALES FORCE</a></li>
+                    <li><a href="https://www.javatpoint.com/automation-anywhere" class="verticalnav">AUTOMATION</a></li>
+                    <li><a href="https://www.javatpoint.com/automation-testing"class="verticalnav">TESTING</a></li>
+                    <li><a href="https://www.javatpoint.com/data-science-vs-machine-learning-vs-big-data"class="verticalnav">DATA SCIENCE</a></li>
+                    
                 </ul>
             </div>
             <div class="center">
-                
+                <table>
+                    <tr>
+                      <th>COURSES AVAILABLE</th>
+                      <th>TRAINER</th>
+                      <th>COURSE TIMINGS</th>
+                      <th>CONTACT NUMBER</th>
+                      <th>FEE STRUCTURE</th>
+                    </tr>
+                    <tr>
+                      <td>.NET</td>
+                      <td>JAHNAVI</td>
+                      <td>9am to 11:00am</td>
+                      <td>6304055206</td>
+                      <td>6000/</td>
+                      
+                    </tr>
+                    <tr>
+                        <td>FULL STACK JAVA</td>
+                        <td>RAHUL</td>
+                        <td>11:00am to 1:00pm</td>
+                        <td>1234567890</td>
+                        <td>10000/</td>
+                    </tr>
+                    <tr>
+                        <td>DEVOPS</td>
+                        <td>PRABHAKAR</td>
+                        <td>2:00Pm to 4:00pm</td>
+                        <td>9876543210</td>
+                        <td>9000/</td>
+                    </tr>
+                    <tr>
+                        <td>SALES FORCE</td>
+                        <td>HEMALATHA</td>
+                        <td>4:00Pm to 6:00pm</td>
+                        <td>8985027244</td>
+                        <td>8000/</td>
+                    </tr>
+                    <tr>
+                        <td>AUTOMATION</td>
+                        <td>SUHASINI</td>
+                        <td>6:00Pm to 8:00pm</td>
+                        <td>4433221156</td>
+                        <td>7000/</td>
+                    </tr>
+                    <tr>
+                        <td>TESTING</td>
+                        <td>RADHAKRISHNA/td>
+                        <td>8:00Pm to 10:00pm</td>
+                        <td>9988776654</td>
+                        <td>7000/</td>
+                    </tr>
+                    <tr>
+                        <td>DATA SCIENCE</td>
+                        <td>SAI LEKHYA/td>
+                        <td>9:00am to 11:00am</td>
+                        <td>3322114467</td>
+                        <td>9000/</td>
+                    </tr>
+                </table>
                 
             </div>
-            <div class="footer">
-                <h2>&copy; www.onlinetraining.com</h2>
-                <h3 class="ul_media">Contact</h3>
-                <ul style="text-align:left" class="ul_media">
-                    <li>9837357598</li>
-                    <li>6359379437</li>
-                </ul><br>
-                <img class="transition" src="assets/img2.jpg" height="100px" width="100px" alt="CSS" >            
+
+            <div class="right">
+
+                <iframe width="300" height="250" style="margin-left:20px;margin-top:20px;" src="https://www.youtube.com/embed/S3DZgJWA7PE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <iframe width="300" height="250" style="margin-left:20px;margin-top:20px;"  src="https://www.youtube.com/embed/H2rR5ZMLXcU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
             </div>
-            
+           
+
+        </div> 
+        <div class="footer">
+            <h2>www.onlinetraining.com</h2>
+            <h3 style="text-align:left">Contact</h3>
+            <ul style="text-align:left">
+                <li>6304055206</li>
+                <li>9502683776</li>
+            </ul><br>
+                       
+        </div>  
     </div>    
 </body>
 </html>
