@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary</title>
+</head>
+<body>
+   <script>
+
+    class dept{
+        constructor(dept)
+        {
+            this.dept = dept;
+        }
+        salary_details(){
+            if(this.sector=="IT"){
+                var salary = 50000;
+                var bonus = salary * (50/100);
+                var newSalary = salary+bonus;
+                document.write("IT");
+                document.write("<br>");
+                document.writeln("salary :"+salary);
+                document.write("<br>");
+                document.writeln("new salary:"+newSalary);
+            }
+            else if(this.dept=="Testing")
+            {
+                var salary = 40000;
+                var bonus = salary * (45/100);
+                var newSalary = salary+bonus;
+                document.write("Testing");
+                document.write("<br>");
+                document.writeln("salary :"+salary);
+                document.write("<br>");
+                document.writeln("new salary:"+newSalary);
+            }
+            else if(this.dept=="ADMIN")
+            {
+                var salary = 35000;
+                var bonus = salary * (45/100);
+                var newSalary = salary+bonus;
+                document.write("ADMIN");
+                document.write("<br>");
+                document.writeln("salary :"+salary);
+                document.write("<br>");
+                document.writeln("new salary:"+newSalary);
+
+            }
+            else
+            {
+                var salary = 30000;
+                var bonus = salary * (20/100);
+                var newSalary = salary+bonus;
+                document.write("others");
+                document.write("<br>");
+                document.writeln("salary :"+salary);
+                document.write("<br>");
+                document.writeln("new salary:"+newSalary);
+            }
+        }
+    }
+    var s = new dept("ADMIN");
+    s.salary_details();
+   </script> 
+</body>
+</html>

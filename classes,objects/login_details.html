@@ -7,36 +7,41 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+    <script>
+    
+       function fun()
+       {
+        var a= document.getElementById("username").value;
+        var b=document.getElementById("password").value;
+        if(a=="Jahnavi" && b=="Janu@123")
+        {
+            alert("LOGIN SUCCESSFULL");
+        }
+        else
+        {
+            alert("INVAILD DETAILS");
+        }
+       }
+       
+    </script>
+    <form onsubmit="return fun()">
         <fieldset style="margin-left:500px;margin-right:500px;background-color:lightblue;color: blue;border-radius: 10px;border-style:inset;border-color: brown;box-shadow: 10px 20px 5px black;">
             <legend style="color:crimson">SIGN IN</legend>
             <br>
             <label>USER NAME</label><br>
-            <input type="text" name="username" required><br>
+            <input type="text" id="username" required  value=""><br>
             <br>
             <br>
             <label>PASSWORD</label><br>
-            <input type="password" name="password" required><br>
+            <input type="password" id="password" required value=""><br>
             <br>
             <br>
-            <input type="submit">
+            <input type="submit" value="Submit">
             <br>
             <br>
         </fieldset>
     </form>
     
-    <script>
-
-        class Login{
-            constructor(user_name,password)
-            {
-                this.user_name=user_name;
-                this.password=password;
-            }
-            if()
-
-        }
-        let log = new Login("Jahnavi","Janu@123");
-    </script>
+    
 </body>
 </html>
